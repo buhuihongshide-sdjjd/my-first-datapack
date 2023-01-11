@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cobbled_deepslate"
+        },
+        "title": "向地心进军!",
+        "description": "获得深板岩/深板岩圆石",
+        "frame": "task",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false 
+    },
+    "criteria": {
+        "get_cobbled_deepslate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cobbled_deepslate"
+                        ]
+                    }
+                ]
+            }
+        },
+        "get_deepslate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:deepslate"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_cobbled_deepslate","get_deepslate"]
+    ],
+    "rewards": {
+        "experience": 15
+    }
+}

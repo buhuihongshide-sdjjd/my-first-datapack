@@ -1,0 +1,35 @@
+{
+    "parent": "sdjjd_newpack:get_copper_ingot",
+    "display": {
+        "icon": {
+            "item": "minecraft:copper_ingot"
+        },
+        "title": "哇!一组氧化的铁!",
+        "description": "获得一组铜锭",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false 
+    },
+    "criteria": {
+        "get_all_copper_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:copper_ingot"
+                        ],
+                        "count": 64
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_all_copper_ingot"]
+    ],
+    "rewards": {
+        "experience": 40
+    }
+}

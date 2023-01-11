@@ -1,0 +1,27 @@
+{
+    "parent": "sdjjd_newpack:kill_a_creeper",
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "title": "捡起你的剑",
+        "description": "捡到一把剑",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false 
+    },
+    "criteria": {
+        "pick_up_sword": {
+            "trigger": "minecraft:thrown_item_picked_up_by_player",
+            "conditions": {
+                "item": {
+                    "items": ["wooden_sword","stone_sword","iron_sword","diamond_sword","netherite_sword","golden_sword"]
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["pick_up_sword"]
+    ]
+}
